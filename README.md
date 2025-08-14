@@ -9,6 +9,14 @@ Contains a C++ server and a C# clinet
  - Multi thereaded server- a seperate thread for each clinet
  - Connection with winapi sockets
  - WPF client with simple UI
+ - data is converted to binary and sent in JSON
+
+## Tech Stack
+ - C++, multithreading
+ - C#
+ - SQLite
+ - winapi networking
+ - JSON ([nlohmans json](https://github.com/nlohmann/json))
 
 ## Download
 developed in visual studio, so just open the TriviaServer.sln in visual studio and build & run the server.
