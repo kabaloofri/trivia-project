@@ -1,0 +1,83 @@
+﻿<Page x:Class="client.pages.WaitingRoom"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:client.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="WaitingRoom">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/client;component/images/trivia_bg.png"/>
+        </Grid.Background>
+        <MediaElement Name="waiting" LoadedBehavior="Manual" Source="images/waitingForStart.mpg"  Width="500" Height="500" Margin="-200,0,0,0" />
+        
+        <StackPanel  Background="LightBlue" Width="300" HorizontalAlignment="Left">
+            <!-- admin-->
+            <Canvas Width="400" Height="80" Margin="-50,0,0,0">
+                <Image Source="pack://application:,,,/client;component/images/fieldCreateRoom.png" Width="400" Height="100"/>
+                <TextBlock Text="Admin" FontSize="45" Canvas.Right="130" Canvas.Top="15"/>
+            </Canvas>
+            <TextBlock Name="admin_name_textBlock" Text="yiftah" FontSize="40" TextAlignment="Center" FontWeight="Bold"/>
+
+            <!-- players-->
+            <Canvas Width="400" Height="80" Margin="-50,0,0,0">
+                <Image Source="pack://application:,,,/client;component/images/fieldCreateRoom.png" Width="400" Height="100"/>
+                <TextBlock Text="Players" FontSize="45" Canvas.Right="130" Canvas.Top="15"/>
+            </Canvas>
+
+            <StackPanel Name="stack_panel_members" Width="300">
+                <!-- players names go here (added from code) -->
+            </StackPanel>
+        </StackPanel>
+
+        <TextBlock Name="countdown" Text="" FontSize="60" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+
+        <Button Name="Start_Game_button" Content="Start Game" Background="Lime" BorderBrush="Black" BorderThickness="2" Width="350" Height="75" Margin="0,500,0,0" FontSize="35"/>
+        <Button Name="leave_game_button" Content="Leave Game" Background="Red" BorderBrush="Black" BorderThickness="2" Width="200" Height="50" Margin="1000,550,0,0" FontSize="30"/>
+
+        <Border Width="400" Height="80" VerticalAlignment="Top" BorderThickness="2" BorderBrush="MidnightBlue" Background="LightGoldenrodYellow" Margin="0,200,150,0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock  Text="Questions: " FontSize="30" Foreground="Black" VerticalAlignment="Center" TextAlignment="Center" Width="200"/>
+                <TextBlock Name="question_count" Text="" Width="200" FontSize="30" Foreground="Black" VerticalAlignment="Center" TextAlignment="Center"/>
+            </StackPanel>
+        </Border>
+        
+        <Border Width="400" Height="80" VerticalAlignment="Top" BorderThickness="2" BorderBrush="MidnightBlue" Background="LightGoldenrodYellow" Margin="750,200,0,0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock  Text="Time Per Question: " FontSize="30" Foreground="Black" VerticalAlignment="Center" TextAlignment="Center" Width="300"/>
+                <TextBlock Name="time_count" Text="" Width="50" FontSize="30" Foreground="Black" VerticalAlignment="Center" TextAlignment="Center"/>
+            </StackPanel>
+        </Border>
+        
+        
+        <!-- settings -->
+        <Button Name="settings_button" Width="100" Height="100" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,25,50,0" Background="Transparent" BorderBrush="Transparent">
+            <StackPanel>
+                <Image Source="pack://application:,,,/client;component/images/settings_icon.png" />
+            </StackPanel>
+        </Button>
+
+        <Grid Name="settings_panel" Visibility="Hidden" Width="1000" VerticalAlignment="Top" Height="600" HorizontalAlignment="Center" Background="#DDFFFFFF">
+            <Border Width="600" Height="50" Margin="0,0,0,100" BorderThickness="2" BorderBrush="Black">
+                <Grid>
+                    <TextBlock Text="Number Of Questions:" HorizontalAlignment="Left" Width="250" FontSize="25" VerticalAlignment="Center"/>
+                    <TextBlock Name="question_count_value" Width="100" FontSize="35" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <Slider x:Name="question_count_slider" Width="200" Minimum="1" Maximum="50" Value="10" HorizontalAlignment="Right" FontSize="30" Margin="0,10,0,0" IsSnapToTickEnabled="True" TickFrequency="1"/>
+                </Grid>
+            </Border>
+
+            <Border Width="600" Height="50" Margin="0,100,0,0" BorderThickness="2" BorderBrush="Black">
+                <Grid>
+                    <TextBlock Text="Time Per Question:" HorizontalAlignment="Left" Width="250" FontSize="25" VerticalAlignment="Center"/>
+                    <TextBlock Name="question_time_value" Width="100" FontSize="35" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <Slider x:Name="time_Per_Question_slider" Width="200" Value="30" Minimum="5" Maximum="120" HorizontalAlignment="Right" Margin="0,10,0,0" IsSnapToTickEnabled="True" TickFrequency="1"/>
+                </Grid>
+            </Border>
+
+            <Button Name="apply_button" Content="OK" FontSize="30" FontWeight="Bold" Width="400" Height="75" VerticalAlignment="Bottom" Margin="0,0,0,25"/>
+        </Grid>
+    </Grid>
+</Page>

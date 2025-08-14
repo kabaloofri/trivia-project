@@ -1,0 +1,12 @@
+﻿<Application x:Class="WpfApp1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfApp1"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <FontFamily x:Key="Gotham">pack://application:,,,/Fonts/gotham_font.ttf</FontFamily>
+        <FontFamily x:Key="Gotham_bold">pack://application:,,,/Fonts/gotham_bold.ttf</FontFamily>
+        <FontFamily x:Key="Gotham_bold_italic">pack://application:,,,/Fonts/gotham_bold_italic.ttf</FontFamily>
+        <FontFamily x:Key="Gotham_book">pack://application:,,,/Fonts/gotham_book.ttf</FontFamily>
+    </Application.Resources>
+</Application>

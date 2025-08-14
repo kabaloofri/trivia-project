@@ -1,0 +1,100 @@
+﻿<Page x:Class="client.pages.personalStatsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:client.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="personalStatsPage">
+
+    <Grid Name="main_Grid">
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/client;component/images/trivia_bg.png"/>
+        </Grid.Background>
+        
+        <TextBlock FontSize="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,50,0,0" Text="Statistics:" TextDecorations="Underline" FontWeight="Bold" Foreground="White" FontFamily="{StaticResource Gotham_bold}"/>
+        <StackPanel Name="stack_panel" Margin="0,125,0,0"  VerticalAlignment="Top" Width="800" Height="450" Orientation="Vertical">
+
+            <Border BorderThickness="3" BorderBrush="AntiqueWhite" Background="#A79acd32" CornerRadius="30">
+                <TextBlock>
+                    <InlineUIContainer>
+                        <Grid Width="{Binding RelativeSource={RelativeSource AncestorType=TextBlock},Path=ActualWidth}">
+                            <TextBlock Name="Score" Text="0" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Right" Height="50" Margin="0,10,50,0" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock  Text="Score" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Left" Height="50"  FontWeight="Bold" Margin="200,10,0,0" Foreground="White"/>
+                        </Grid>
+                    </InlineUIContainer>
+                </TextBlock>
+            </Border>
+
+            <Border BorderThickness="3" BorderBrush="AliceBlue" Background="#A7483d8b" Margin="0,10,0,0" CornerRadius="30">
+                <TextBlock>
+                    <InlineUIContainer>
+                        <Grid Width="{Binding RelativeSource={RelativeSource AncestorType=TextBlock},Path=ActualWidth}">
+                            <TextBlock Name="Games_Played" Text="0" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Right" Height="50" Margin="0,10,50,0" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock  Text="Games Played" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Left" Width="500" Height="50" Margin="200,10,0,0" FontWeight="Bold" Foreground="White"/>
+                        </Grid>
+                    </InlineUIContainer>
+                </TextBlock>
+            </Border>
+
+            <Border BorderThickness="3" BorderBrush="AliceBlue" Background="#A7800080" Margin="0,10,0,0" CornerRadius="30">
+                <TextBlock>
+                    <InlineUIContainer>
+                        <Grid Width="{Binding RelativeSource={RelativeSource AncestorType=TextBlock},Path=ActualWidth}">
+                            <TextBlock Name="Total_Answers" Text="0" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Right" Height="50" Margin="0,10,50,0" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Text="Total Answers" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Left" Width="500" Height="50" Margin="200,10,0,0" FontWeight="Bold" Foreground="White"/>
+                        </Grid>
+                    </InlineUIContainer>
+                </TextBlock>
+            </Border>
+            
+            
+            
+            <!-- correct answers -->
+            <Border BorderThickness="3" BorderBrush="AliceBlue" Background="#a7228b22" Margin="0,10,0,0" CornerRadius="30">
+                <TextBlock>
+                    <InlineUIContainer>
+                        <Grid Width="{Binding RelativeSource={RelativeSource AncestorType=TextBlock},Path=ActualWidth}">
+                            <TextBlock Name="Correct_Answers" Text="0" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Right" Height="50" Margin="0,10,50,0" FontWeight="Bold" Foreground="White" />
+                            <TextBlock  Text="Correct Answers" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Left" Width="500" Height="50" Margin="200,10,0,0" FontWeight="Bold" Foreground="White"/>
+                        </Grid>
+                    </InlineUIContainer>
+                </TextBlock>
+            </Border>
+            
+            
+            <!-- wrong answers -->
+            <Border BorderThickness="3" BorderBrush="AntiqueWhite" Background="#a7b22222" Margin="0,10,0,0" CornerRadius="30">
+                <TextBlock>
+                    <InlineUIContainer>
+                        <Grid Width="{Binding RelativeSource={RelativeSource AncestorType=TextBlock},Path=ActualWidth}">
+                            <TextBlock Name="Wrong_Answers" Text="0" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Right" Height="50" Margin="0,10,50,0" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock  Text="Wrong Answers" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Left" Width="500" Height="50" Margin="200,10,0,0" FontWeight="Bold" Foreground="White"/>
+                        </Grid>
+                    </InlineUIContainer>
+                </TextBlock>
+            </Border>
+
+            <!-- average answer time -->
+            <Border BorderThickness="3" BorderBrush="AntiqueWhite" Background="#a720b2aa" Margin="0,10,0,0" CornerRadius="30">
+                <TextBlock>
+                    <InlineUIContainer>
+                        <Grid Width="{Binding RelativeSource={RelativeSource AncestorType=TextBlock}, Path=ActualWidth}">
+                            <!-- add textblock value-->
+                            <TextBlock Text="Average Answer Time" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Left" Width="500" Height="50" Margin="200,10,0,0" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="Average_Answer_Time" Text="0" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Right" Height="50" Margin="0,10,50,0" FontWeight="Bold" Foreground="White"/>
+                        </Grid>
+                    </InlineUIContainer>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+
+        <Image Source="/images/score_icon.png" Margin="0,0,500,325" Width="60" Height="60"/>
+        <Image Source="/images/game_icon.png" Margin="0,0,500,175" Width="60" Height="60"/>
+        <Image Source="/images/total_icon.png" Margin="0,0,500,25" Width="60" Height="60"/>
+        <Image Source="/images/correct_icon.png" Margin="0,125,500,0" Width="60" Height="60"/>
+        <Image Source="/images/wrong_icon.png" Margin="0,280,500,0" Width="60" Height="60"/>
+        <Image Source="/images/time_icon.png" Margin="0,430,500,0" Width="60" Height="60"/>
+    </Grid>
+</Page>

@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Reasorces">
+      <UniqueIdentifier>{8859c937-6a3e-48ae-9da4-d02c94efb5cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers Files">
+      <UniqueIdentifier>{8e3b08bb-0c83-4e94-83e8-ca5e773c6a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{be0b7279-161f-450e-a05a-cb24a26cdd62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="files\Communicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\Helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\IDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\JsonRequestPacketSerializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\LoginRequestHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\RequestHandlerFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\JsonRequestPacketDeserializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\IRequestHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\Server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\WSAInitializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\Buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\MenuRequestHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\Room.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\LoginManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\roomManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\SqliteDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\sqlite3.c">
+      <Filter>Reasorces</Filter>
+    </ClCompile>
+    <ClCompile Include="files\Question.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\LoggedUser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\StatisticsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\RoomAdminRequestHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\RoomMemberRequestHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\GameManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\GameRequestHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="files\Communicator.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\Helper.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\IDatabase.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\JsonRequestPacketSerializer.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\LoginRequestHandler.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\RequestHandlerFactory.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\JsonRequestPacketDeserializer.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\IRequestHandler.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\Server.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\WSAInitializer.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\Buffer.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\MenuRequestHandler.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\LoggedUser.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\LoginManager.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\Room.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\roomManager.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\sqlite3.h">
+      <Filter>Reasorces</Filter>
+    </ClInclude>
+    <ClInclude Include="files\json.hpp">
+      <Filter>Reasorces</Filter>
+    </ClInclude>
+    <ClInclude Include="files\Question.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\StatisticsManager.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\SqliteDatabase.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\RoomAdminRequestHandler.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\RoomMemberRequestHandler.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\GameManager.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\Game.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\GameRequestHandler.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\OTP.h">
+      <Filter>Headers Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
