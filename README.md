@@ -1,27 +1,52 @@
-# Trivia Project
+# 🎲 Trivia Project
 
 An online multiplayer trivia game you can play with friends!
-Built with a friend for 11th grade final project in magshimim.
-Contains a C++ server and a C# clinet
+Built as an 11th-grade final project in Magshimim. Features a C++ server and a C# client for a complete multiplayer experience.
 
-## Features
- - Login with username and password saved in an sqlite database
- - Multi thereaded server- a seperate thread for each clinet
- - Connection with winapi sockets
- - WPF client with simple UI
- - data is converted to binary and sent in JSON
+## 🚀 Features
 
-## Tech Stack
- - C++, multithreading
- - C#
- - SQLite
- - winapi networking
- - JSON ([nlohmans json](https://github.com/nlohmann/json))
+ - 🔑 Login System: Username and password stored securely in an SQLite database.
 
-## Download
-developed in visual studio, so just open the TriviaServer.sln in visual studio and build & run the server.
-To run the clinet, in another visual studio instance open the clinet.sln, build and run and connect to your local ip where the server runs.
+ - 🧵 Multithreaded Server: Each client runs in a separate thread for smooth performance.
 
+ - 🌐 Networking: Built with WinAPI sockets for reliable connections.
 
-## More Info:
-Detaild UML of the server arcitecture in [draw.io](https://app.diagrams.net) 
+ - 🎨 WPF Client: Simple and user-friendly interface.
+
+ - 📦 Data Handling: Data is converted to binary and transmitted using JSON (nlohmann/json).
+
+## 🛠 Tech Stack
+
+ - Server: C++, Multithreading
+
+ - Client: C# with WPF
+
+ - Database: SQLite
+
+ - Networking: WinAPI sockets
+
+ - Data Serialization: JSON ([nlohmann/json](https://github.com/nlohmann/json))
+
+## 💾 Installation / Download
+
+The project was developed in Visual Studio:
+
+1. **Server**
+
+   Open TriviaServer.sln in Visual Studio.
+
+   Build & run the server.
+
+2. **Client**
+
+   Open Client.sln in another Visual Studio instance.
+
+   Build & run the client.
+
+   Connect to the server using your local IP address.
+
+## 📚 Additional Info
+
+Detailed UML of the server architecture available in [draw.io](https://app.diagrams.net) 
+
+Upload the TriviaServer/Trivia-ServerDesign.xml file to the diagram to view it.
